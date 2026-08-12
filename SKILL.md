@@ -3,30 +3,25 @@ name: skill-portfolio-audit
 slug: skill-portfolio-audit
 displayName: Skill Portfolio Audit
 description: >
-  Audit a user's existing Skill portfolio against their recurring work. Use when
-  the user asks to inventory Skills, identify duplicated or stale Skills, decide
-  which recurring workflows deserve standalone Skills, or assess which Skills are
-  safe and valuable to share publicly. Produces an evidence-based portfolio map,
-  candidate scorecard, privacy classification, consolidation plan, persistent
-  execution queue with dependency-linked tasks, and a prioritized roadmap.
-  Read-only audit of existing Skills; does not modify, delete, publish, or
-  execute any original Skill. Trigger keywords: skill audit, portfolio review,
-  skill inventory, duplicate detection, sharing classification, consolidation
-  plan, recurring workflow, skill化, 组合审计, 机会评估.
+  Generates evidence-based portfolio audits, candidate scorecards, privacy
+  classifications, consolidation plans, and a persistent execution queue with
+  dependency-linked tasks for Skill portfolio management. The audit is
+  read-only against existing Skills: it does not modify, delete, publish, or
+  execute any original Skill; the persistent execution queue writes only to a
+  separate task ledger file outside the audited Skills. Use when the user asks
+  to inventory Skills, identify duplicated or stale Skills, decide which
+  recurring workflows deserve standalone Skills, or assess which Skills are
+  safe and valuable to share publicly.
 description_zh: Skill 组合审计与机会评估
 description_en: Skill Portfolio Audit
-version: "1.1.1"
+version: "1.1.2"
 agent_created: true
 read_when:
   - "skill audit"
   - "portfolio review"
-  - "skill inventory"
   - "duplicate detection"
   - "sharing classification"
-  - "consolidation plan"
-  - "recurring workflow"
-  - "skill化"
-  - "组合审计"
+  - "Skill 组合审计"
   - "机会评估"
 ---
 
