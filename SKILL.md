@@ -7,14 +7,15 @@ description: >
   the user asks to inventory Skills, identify duplicated or stale Skills, decide
   which recurring workflows deserve standalone Skills, or assess which Skills are
   safe and valuable to share publicly. Produces an evidence-based portfolio map,
-  candidate scorecard, privacy classification, consolidation plan, and
-  prioritized roadmap without publishing or deleting anything. Trigger keywords:
-  skill audit, portfolio review, skill inventory, duplicate detection, sharing
-  classification, consolidation plan, recurring workflow, skill化, 组合审计,
-  机会评估.
+  candidate scorecard, privacy classification, consolidation plan, persistent
+  execution queue with dependency-linked tasks, and a prioritized roadmap.
+  Read-only audit of existing Skills; does not modify, delete, publish, or
+  execute any original Skill. Trigger keywords: skill audit, portfolio review,
+  skill inventory, duplicate detection, sharing classification, consolidation
+  plan, recurring workflow, skill化, 组合审计, 机会评估.
 description_zh: Skill 组合审计与机会评估
 description_en: Skill Portfolio Audit
-version: "1.1.0"
+version: "1.1.1"
 agent_created: true
 read_when:
   - "skill audit"
