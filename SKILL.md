@@ -12,9 +12,15 @@ description: >
   to inventory Skills, identify duplicated or stale Skills, decide which
   recurring workflows deserve standalone Skills, or assess which Skills are
   safe and valuable to share publicly.
+  中文触发词: 技能组合审计, 机会评估, 重复检测, 分享价值分级
 description_zh: Skill 组合审计与机会评估
 description_en: Skill Portfolio Audit
-version: "1.1.2"
+not_for:
+  - Designing, creating, or publishing a single Skill (use a skill-design or audit-publish skill)
+  - Debugging Skill installation or platform publish failures (use a debugging skill)
+  - Auditing code repositories or financial project portfolios
+  - Executing or modifying any Skill listed in the audit output
+version: "1.1.5"
 agent_created: true
 read_when:
   - "skill audit"
