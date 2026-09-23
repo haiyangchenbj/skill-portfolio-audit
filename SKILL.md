@@ -2,6 +2,7 @@
 name: skill-portfolio-audit
 slug: skill-portfolio-audit
 displayName: Skill Portfolio Audit
+version: "1.1.6"
 description: >
   Generates evidence-based portfolio audits, candidate scorecards, privacy
   classifications, consolidation plans, and a persistent execution queue with
@@ -20,7 +21,6 @@ not_for:
   - Debugging Skill installation or platform publish failures (use a debugging skill)
   - Auditing code repositories or financial project portfolios
   - Executing or modifying any Skill listed in the audit output
-version: "1.1.5"
 agent_created: true
 read_when:
   - "skill audit"
