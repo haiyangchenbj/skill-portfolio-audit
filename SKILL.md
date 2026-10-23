@@ -2,7 +2,7 @@
 name: skill-portfolio-audit
 slug: skill-portfolio-audit
 displayName: Skill Portfolio Audit
-version: "1.1.6"
+version: "1.1.7""
 description: >
   Generates evidence-based portfolio audits, candidate scorecards, privacy
   classifications, consolidation plans, and a persistent execution queue with
@@ -120,6 +120,10 @@ Output must include:
 7. P0 risks: hardcoded credentials, personal data, company internal info, version drift.
 8. Persistent execution queue: build dependency-linked tasks for all confirmed actions, so completing one P0 does not lose the remaining items.
 9. After completing each item, update the execution ledger and claim the next unblocked task from the task list.
+
+### Repo visibility (2026-10-23)
+
+`GET /users/{name}/repos` lists **public repos only**. To classify the full inventory, call `GET /user/repos?visibility=all` authenticated, and count private repos (backups, personal archives) separately from public skill assets — never merge the two in a portfolio report.
 
 ## Hard Rules
 
