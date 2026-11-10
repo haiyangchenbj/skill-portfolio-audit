@@ -1,6 +1,6 @@
 ## Description:
 
-Generates evidence-based portfolio audits, candidate scorecards, privacy classifications, consolidation plans, and a persistent execution queue with dependency-linked tasks for Skill portfolio management.
+Generates evidence-based Skill portfolio audits, candidate scorecards, privacy classifications, consolidation plans, and dependency-linked execution queues while leaving audited Skills unchanged.
 
 This skill is ready for commercial/non-commercial use.
 
@@ -14,7 +14,7 @@ MIT-0
 
 ## Use Case:
 
-Developers and skill maintainers use this skill to inventory Skill portfolios, find duplicates or stale versions, classify sharing risk, and produce prioritized maintenance and publication roadmaps.
+Skill authors and portfolio maintainers use this agent to inventory existing Skills and recurring workflows, identify duplication or maintenance needs, prioritize candidates, and classify what is appropriate to keep private or share.
 
 ### Deployment Geography for Use:
 
@@ -22,35 +22,32 @@ Global
 
 ## Known Risks and Mitigations:
 
-Risk: An overly broad scan range could expose sensitive projects, memories, or private Skill material during an audit.
+Risk: Audits may inspect personal folders, histories, or private repositories, and reports or the task ledger may expose sensitive information.
 
-Mitigation: Define the scan range before running the skill and exclude sensitive projects or memories that should not be reviewed.
+Mitigation: Confirm the permitted inspection scope first and keep reports and the task ledger private.
 
-Risk: The persistent execution queue writes follow-up work to a task ledger, which could be placed in an unintended location.
+Risk: The artifact contains a malformed version field that may interfere with installation.
 
-Mitigation: Choose and confirm the task-ledger location before writing audit follow-up tasks.
-
-Risk: Audit recommendations may misclassify sharing readiness or miss context in large Skill portfolios.
-
-Mitigation: Review the evidence boundaries, privacy classifications, and proposed P0 actions before acting on publication or maintenance recommendations.
+Mitigation: Correct the frontmatter version field to valid version syntax before installation.
 
 ## Reference(s):
 
-- [ClawHub skill page](https://clawhub.ai/haiyangchenbj/skills/skill-portfolio-audit)
+- [ClawHub Skill release](https://clawhub.ai/haiyangchenbj/skills/skill-portfolio-audit)
+- [Publisher profile](https://clawhub.ai/user/haiyangchenbj)
 
 ## Skill Output:
 
-**Output Type(s):** [text, markdown, configuration, guidance]
+**Output Type(s):** [Markdown, Guidance]
 
-**Output Format:** [Markdown report with scorecards, classifications, roadmap sections, and a task ledger]
+**Output Format:** [Markdown portfolio audit and a separate persistent task ledger]
 
 **Output Parameters:** [1D]
 
-**Other Properties Related to Output:** [May include evidence boundaries, risk locations without credential values, dependency-linked tasks, and next-action status.]
+**Other Properties Related to Output:** [Evidence-based recommendations and dependency-linked follow-up tasks; original audited Skills remain unchanged.]
 
 ## Skill Version(s):
 
-1.1.6 (source: frontmatter and server release evidence)
+1.1.7 (source: server-resolved release metadata)
 
 ## Ethical Considerations:
 
