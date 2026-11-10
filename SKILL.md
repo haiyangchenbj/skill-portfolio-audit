@@ -2,7 +2,7 @@
 name: skill-portfolio-audit
 slug: skill-portfolio-audit
 displayName: Skill Portfolio Audit
-version: "1.1.7""
+version: "1.1.8"
 description: >
   Generates evidence-based portfolio audits, candidate scorecards, privacy
   classifications, consolidation plans, and a persistent execution queue with
@@ -94,7 +94,7 @@ Total score guidance:
 - 26-35: P0, design or maintain immediately.
 - 20-25: P1, run a round of real-task validation first.
 - 14-19: P2, keep as a module or reference doc.
-- Below 13: do not Skill-ify for now.
+- Below 14: do not Skill-ify for now.
 
 ### Step 6: [LLM] Classify sharing value
 
