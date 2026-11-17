@@ -2,7 +2,7 @@
 name: skill-portfolio-audit
 slug: skill-portfolio-audit
 displayName: Skill Portfolio Audit
-version: "1.1.8"
+version: "1.1.9"
 description: >
   Generates evidence-based portfolio audits, candidate scorecards, privacy
   classifications, consolidation plans, and a persistent execution queue with
@@ -143,6 +143,7 @@ Output must include:
 | Too many Skills | Full enumeration first, then detail-audit self-built and high-frequency Skills; installed generic Skills summarized by category |
 | Sub-agent or search fails | Retry and cross-validate with Glob/Read/local stats; do not stop on single failure |
 | Insufficient conversation recall | Use project logs, output file counts, and representative files as supplementary evidence; note evidence boundaries |
+| A candidate has malformed or missing frontmatter (unparseable YAML or no SKILL.md) | Record the file path and the parse error as a P0 data-quality finding; do not guess its metadata and exclude it from scoring until fixed |
 | Same-name copies with different content | Flag version drift; recommend setting one authoritative source and one-way publish flow |
 | Personal data mixed with generic method | Split into public engine + private config/data layer |
 
